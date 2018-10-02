@@ -1,0 +1,26 @@
+$color-main: #582d41;
+$color-main-dark: #3d1f2d;
+$color-main-light: lighten($color-main, 30%);
+$dark_bg: #2D353E;
+$navbar_color: #000000;
+$banner2_color: $color-main;
+$h_color: #313131;
+
+$body_font_size: 1.1em;
+
+$sections_padding: 60px;
+$sections_padding_small: 40px;
+
+$bg_banner1: url(../images/backgrounds/bg7.jpg);
+
+@import 'general';
+@import 'about';
+@import 'navbar';
+@import 'header';
+@import 'banners';
+@import 'countdown';
+@import 'faqs';
+@import 'footer';
+@import 'organizers';
+
+
