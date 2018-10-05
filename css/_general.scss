@@ -138,3 +138,26 @@ ul.color_list {
         color: white;
     }
 }
+
+
+@media(max-width:767px){
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hacktober-bg {
+        padding: 20px 15px;
+        img {
+            margin-bottom:15px;
+        }
+    }
+
+    #sponsors {
+        text-align: center;
+        img {
+            max-height: 90px;
+            margin: 15px 0;
+        }
+    }
+}

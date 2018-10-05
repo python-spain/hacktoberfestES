@@ -13,7 +13,7 @@ $sections_padding_small: 40px;
 
 $bg_banner1: url(../images/backgrounds/bg7.jpg);
 
-@import 'general';
+
 @import 'about';
 @import 'navbar';
 @import 'header';
@@ -23,5 +23,5 @@ $bg_banner1: url(../images/backgrounds/bg7.jpg);
 @import 'footer';
 @import 'organizers';
 @import 'sponsors';
-
+@import 'general';
 
