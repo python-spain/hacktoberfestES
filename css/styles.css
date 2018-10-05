@@ -232,6 +232,9 @@ h4 {
 
 a {
   color: #582d41; }
+a.btn {
+  color: white;
+}
 
 .lead {
   font-weight: 400; }
