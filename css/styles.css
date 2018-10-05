@@ -3,12 +3,15 @@ h2,
 h3,
 h4 {
   font-family: 'Roboto', sans-serif;
-  color: #313131;
+  color: #ff5755;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
   text-align: center;
   width: 100%; }
+
+a {
+  color: #582d41; }
 
 .lead {
   font-weight: 400; }
@@ -19,12 +22,21 @@ body {
 .highlighted {
   color: #582d41; }
 
-section {
-  padding: 40px 0; }
+.bg-highlight {
+  background-color: #582d41;
+  color: white; }
+  .bg-highlight h1, .bg-highlight h2, .bg-highlight h3 {
+    color: white; }
 
+/* section {
+    padding: $sections_padding_small 0;
+} */
 @media (min-width: 768px) {
   section {
     padding: 60px 0; } }
+h2, h3 {
+  margin-bottom: 30px; }
+
 .custom-list-icon, .list-arrow-right {
   list-style-type: none;
   padding: 0; }
@@ -67,12 +79,27 @@ ul.color_list {
     left: 0;
     transition: all 0.3s ease 0s; }
 
-#about.about2 .important_dates {
-  padding-top: 5px; }
+.hacktober-bg {
+  color: white;
+  background-color: #582d41;
+  padding: 20vh;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, top left; }
+  .hacktober-bg a {
+    color: #ff5755; }
+  @media screen and (min-width: 768px) {
+    .hacktober-bg {
+      background-image: url("../images/flourish-bottom.svg"), url("../images/flourish-top.svg"), radial-gradient(circle, #582d41 0, #3d1f2d 200%); } }
+  .hacktober-bg h1, .hacktober-bg h2, .hacktober-bg h3 {
+    text-transform: none;
+    color: white; }
+
+#about img {
+  margin-top: 50px; }
 
 #mainNav {
   background-color: #3d1f2d !important;
-  border-bottom: 1px solid #b36b8c;
+  border-bottom: 1px solid #7a3e5a;
   font-size: 1rem; }
   #mainNav #logo {
     max-height: 50px;
@@ -144,17 +171,20 @@ header {
     color: white; }
 
 .banner3 {
+  color: white;
   background-color: #582d41;
   min-height: 100vh;
-  padding: 20vh;
+  padding: 10vh;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom right, top left; }
+  .banner3 a {
+    color: #ff5755; }
   @media screen and (min-width: 768px) {
     .banner3 {
       background-image: url("../images/flourish-bottom.svg"), url("../images/flourish-top.svg"), radial-gradient(circle, #582d41 0, #3d1f2d 200%); } }
-  .banner3 img {
-    max-width: 30rem; }
-  .banner3 h1, .banner3 h2 {
+  .banner3 img, .banner3 h1 {
+    margin-bottom: 50px; }
+  .banner3 h1, .banner3 h2, .banner3 h3 {
     text-transform: none;
     color: white; }
 
@@ -276,11 +306,12 @@ footer {
         margin-bottom: 5px; }
         #organizers.organizers2 .organizer .organizer-info h5 a:hover {
           text-decoration: none; }
-      #organizers.organizers2 .organizer .organizer-info span {
-        font-size: 0.8rem; }
 
 @media (min-width: 768px) {
   #organizers .organizers_pictures {
     padding: 0 100px; } }
+#sponsors img {
+  max-height: 125px;
+  margin: 50px 0; }
 
 /*# sourceMappingURL=styles.css.map */

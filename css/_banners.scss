@@ -73,9 +73,14 @@
 }
 
 .banner3 {
+    color: white;
     background-color: $color-main;
     min-height: 100vh;
-    padding: 20vh;
+    padding: 10vh;
+
+    a {
+        color: $h_color;
+    }
 
     @media screen and (min-width: 768px) {
         background-image: url('../images/flourish-bottom.svg'), url('../images/flourish-top.svg'), radial-gradient(circle, $color-main 0, $color-main-dark 200%);
@@ -83,11 +88,11 @@
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, top left;
 
-    img {
-        max-width: 30rem;
+    img, h1 {
+        margin-bottom: 50px;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
         text-transform: none;
         color: white;
     }
