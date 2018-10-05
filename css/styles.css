@@ -235,6 +235,9 @@ a {
 a.btn {
   color: white;
 }
+a.btn-danger, a.btn-danger:hover {
+  background-color: #ff5755;
+}
 
 .lead {
   font-weight: 400; }
