@@ -5,26 +5,26 @@
 
     $.fn.showclock = function() {
         
-        var currentDate=new Date();
-        var fieldDate=$(this).data('date').split('-');
-        var futureDate=new Date(fieldDate[0],fieldDate[1]-1,fieldDate[2]);
-        var seconds=futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        let currentDate=new Date();
+        let fieldDate=$(this).data('date').split('-');
+        let futureDate=new Date(fieldDate[0],fieldDate[1]-1,fieldDate[2]);
+        let seconds=futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
         if(seconds<=0 || isNaN(seconds)){
             this.hide();
             return this;
         }
 
-        var days=Math.floor(seconds/86400);
+        let days=Math.floor(seconds/86400);
         seconds=seconds%86400;
         
-        var hours=Math.floor(seconds/3600);
+        let hours=Math.floor(seconds/3600);
         seconds=seconds%3600;
 
-        var minutes=Math.floor(seconds/60);
+        let minutes=Math.floor(seconds/60);
         seconds=Math.floor(seconds%60);
         
-        var html="";
+        let html="";
 
         if(days!=0){
             html+="<div class='countdown-container days'>"
@@ -52,7 +52,7 @@
     };
 
     $.fn.countdown = function() {
-        var el=$(this);
+        let el=$(this);
         el.showclock();
         setInterval(function(){
             el.showclock(); 
