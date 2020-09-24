@@ -1,15 +1,13 @@
-# hacktoberfest.es.python.org
+# hacktoberfest.geekscat.org
 
-Basado en hacktoberfest-bcn.github.io
+Landing per l'esdeveniment que farem aquest oct'20 vinculat al Hacktoberfest.
 
-## Desarrollo
-Para desarrollar en local e ir viendo los resultados:
+Basat en hacktoberfest.es.python.org
 
-1. Ir a la carpeta del repo y ejecutar:
+## Devel
+
 ```
 python -m http.server 8000
 ```
 
-2. Abrir en el navegador [http://localhost:8000](http://localhost:8000).
-
-<!-- Based on [Start Bootstrap - Scrolling Nav](https://startbootstrap.com/template-overviews/scrolling-nav/) -->
+[http://localhost:8000](http://localhost:8000)
